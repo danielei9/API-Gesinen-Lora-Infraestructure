@@ -1,22 +1,4 @@
 //********************************************* */
-//******************** ACCESS ******************* */
-//********************************************* */
-exports.allAccess = (req, res) => {
-  res.status(200).send("Public Content.");
-};
-
-exports.userBoard = (req, res) => {
-  res.status(200).send("User Content.");
-};
-
-exports.adminBoard = (req, res) => {
-  res.status(200).send("Admin Content.");
-};
-
-exports.moderatorBoard = (req, res) => {
-  res.status(200).send("Moderator Content.");
-};
-//********************************************* */
 //******************** CONTROLLER ******************* */
 //********************************************* */
 const db = require("../../models");
@@ -30,20 +12,7 @@ class UserController extends Controller {
     super.model = User
     super.logic = new UserLogic(User)
   }
-  adminBoard() {
-    // TODO: Implementar
-  }
-  allAccess() {
-    // TODO: Implementar
-  }
 
-  moderatorBoard() {
-    // TODO: Implementar
-  }
-
-  userBoard() {
-    // TODO: Implementar
-  }
 
   getDataFromRequest(req) {
     const dataRequest = {
