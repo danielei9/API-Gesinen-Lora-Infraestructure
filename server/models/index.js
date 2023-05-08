@@ -32,6 +32,7 @@ db.networkServer = require("../api/NetworkServer/networkServer.model")(sequelize
 db.gateway = require("../api/Gateway/gateway.model")(sequelize, Sequelize);
 db.gateway = require("../api/Application/application.model")(sequelize, Sequelize);
 db.gateway = require("../api/Decoder/decoder.model")(sequelize, Sequelize);
+db.gateway = require("../api/Sensor/sensor.model")(sequelize, Sequelize);
 
 fs
   .readdirSync(__dirname)
