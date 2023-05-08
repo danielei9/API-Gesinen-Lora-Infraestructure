@@ -34,6 +34,7 @@ class App {
   routes() {
     // require('./api/User/user.routes')(this.app);
     require('./api/NetworkServer/networkServer.routes')(this.app);
+    require('./api/Gateway/gateway.routes')(this.app);
   }
 
   start() {

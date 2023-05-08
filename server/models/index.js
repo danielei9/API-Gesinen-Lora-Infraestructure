@@ -29,6 +29,7 @@ db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
 db.networkServer = require("../api/NetworkServer/networkServer.model")(sequelize, Sequelize);
+db.gateway = require("../api/Gateway/gateway.model")(sequelize, Sequelize);
 
 fs
   .readdirSync(__dirname)

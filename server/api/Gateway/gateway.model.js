@@ -102,5 +102,5 @@ Gateway.init({
   });
   
 
-  return User;
+  return Gateway;
 };
