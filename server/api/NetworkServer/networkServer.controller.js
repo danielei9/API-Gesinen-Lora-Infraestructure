@@ -16,19 +16,13 @@ class NetworkServerController extends Controller {
 
   getDataFromRequest(req) {
     const dataRequest = {
-      username: req.body.username,
       name: req.body.name,
-      surname: req.body.surname,
-      phone: req.body.phone,
-      email: req.body.email,
-      pswd: req.body.pswd,
-      postalCode: req.body.postalCode,
-      street: req.body.street,
-      locality: req.body.locality,
-      country: req.body.country,
-      CouncilId: req.body.councilId,
-      BusinessId: req.body.businessId,
-    }
+      description: req.body.description,
+      type: req.body.type,
+      networkType: req.body.networkType,
+      url: req.body.url,
+      status: req.body.status,
+    };
 
     console.log(dataRequest)
     return dataRequest

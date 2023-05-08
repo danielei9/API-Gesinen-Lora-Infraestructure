@@ -25,9 +25,9 @@ class UserController extends Controller {
       town: req.body.town,
       circleRadius: req.body.circleRadius,
       disabled: req.body.disabled,
-      status: req.body.status
-    }
-
+      status: req.body.status,
+    };
+    
     console.log(dataRequest)
     return dataRequest
   }

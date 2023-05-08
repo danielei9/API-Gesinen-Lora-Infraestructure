@@ -16,18 +16,9 @@ class ApplicationController extends Controller {
 
   getDataFromRequest(req) {
     const dataRequest = {
-      username: req.body.username,
       name: req.body.name,
-      surname: req.body.surname,
-      phone: req.body.phone,
-      email: req.body.email,
-      pswd: req.body.pswd,
-      postalCode: req.body.postalCode,
-      street: req.body.street,
-      locality: req.body.locality,
-      country: req.body.country,
-      CouncilId: req.body.councilId,
-      BusinessId: req.body.businessId,
+      description: req.body.description,
+      serviceProfile: req.body.serviceProfile
     }
 
     console.log(dataRequest)
