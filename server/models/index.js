@@ -28,7 +28,7 @@ const sequelize = new Sequelize(
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
-db.user = require("../api/User/user.model")(sequelize, Sequelize);
+db.networkServer = require("../api/NetworkServer/networkServer.model")(sequelize, Sequelize);
 
 fs
   .readdirSync(__dirname)
