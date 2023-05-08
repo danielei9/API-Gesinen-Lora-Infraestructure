@@ -17,7 +17,7 @@ class App {
   }
 
   config() {
-    this.app.set('port', process.env.PORT || 3000);
+    this.app.set('port', process.env.PORT || 3002);
   }
 
   middlewares() {
@@ -32,7 +32,8 @@ class App {
   }
 
   routes() {
-    require('./api/User/user.routes')(this.app);
+    // require('./api/User/user.routes')(this.app);
+    require('./api/NetworkServer/networkServer.routes')(this.app);
   }
 
   start() {
