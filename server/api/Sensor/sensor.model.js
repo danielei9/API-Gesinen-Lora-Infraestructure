@@ -5,13 +5,13 @@ module.exports = (sequelize, DataTypes) => {
   class Sensor extends Model {
     static associate(models) {
       // Sensor belongs to a Server
-      Sensor.belongsTo(models.Server, {
-        foreignKey: "serverId"
-      });
-      // Sensor belongs to a SensorType
-      Sensor.belongsTo(models.SensorType, {
-        foreignKey: "sensorTypeId"
-      });
+    //   Sensor.belongsTo(models.Server, {
+    //     foreignKey: "serverId"
+    //   });
+    //   // Sensor belongs to a SensorType
+    //   Sensor.belongsTo(models.SensorType, {
+    //     foreignKey: "sensorTypeId"
+    //   });
     }
   }
 
