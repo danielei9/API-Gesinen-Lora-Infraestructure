@@ -33,8 +33,12 @@ class App {
 
   routes() {
     // require('./api/User/user.routes')(this.app);
-    require('./api/NetworkServer/networkServer.routes')(this.app);
+    require('./api/Application/application.routes')(this.app);
+    require('./api/Decoder/decoder.routes')(this.app);
     require('./api/Gateway/gateway.routes')(this.app);
+    require('./api/NetworkServer/networkServer.routes')(this.app);
+    require('./api/Sensor/sensor.routes')(this.app);
+    require('./api/Server/server.routes')(this.app);
   }
 
   start() {
