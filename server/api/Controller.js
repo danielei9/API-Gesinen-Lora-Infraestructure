@@ -19,7 +19,9 @@ class Controller {
 
   getEnums = async (req, res) => {
     var obj = {
-      "sensorType": ['Temperature', 'Humidity', 'Pressure', 'Air Quality']
+      "sensorType": ['Temperature', 'Humidity', 'Pressure', 'Air Quality'],
+      "type": ['chirpstack', 'ttn'],
+      "networkType": ['embedded', 'centralized']
     }
     res.status(200).json(obj)
   }
