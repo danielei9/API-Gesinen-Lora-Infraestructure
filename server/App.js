@@ -39,6 +39,7 @@ class App {
     require('./api/NetworkServer/networkServer.routes')(this.app);
     require('./api/Sensor/sensor.routes')(this.app);
     require('./api/Server/server.routes')(this.app);
+    require('./api/Enums/enums.routes')(this.app);
   }
 
   start() {

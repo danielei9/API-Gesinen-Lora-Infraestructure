@@ -17,6 +17,13 @@ class Controller {
     return dataRequest
   }
 
+  getEnums = async (req, res) => {
+    var obj = {
+      "sensorType": ['Temperature', 'Humidity', 'Pressure', 'Air Quality']
+    }
+    res.status(200).json(obj)
+  }
+
   findAll = async (req, res) => {
     console.log("findAll")
     await this.logic.findAll()
