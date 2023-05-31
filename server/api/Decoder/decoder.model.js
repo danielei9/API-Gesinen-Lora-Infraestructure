@@ -29,7 +29,7 @@ module.exports = (sequelize, DataTypes) => {
     description: {
       type: DataTypes.STRING
     },
-    type: {
+    decoderType: {
       type: DataTypes.ENUM('Centralizado', 'Embebido'),
       allowNull: false
     }

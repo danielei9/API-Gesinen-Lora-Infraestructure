@@ -21,7 +21,8 @@ class Controller {
     var obj = {
       "sensorType": ['Temperature', 'Humidity', 'Pressure', 'Air Quality'],
       "type": ['chirpstack', 'ttn'],
-      "networkType": ['embedded', 'centralized']
+      "networkType": ['embedded', 'centralized'],
+      "decoderType": ['Centralizado', 'Embebido']
     }
     res.status(200).json(obj)
   }

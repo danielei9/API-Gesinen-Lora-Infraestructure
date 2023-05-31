@@ -18,7 +18,7 @@ class DecoderController extends Controller {
     const dataRequest = {
       name: req.body.name,
       description: req.body.description,
-      type: req.body.type
+      decoderType: req.body.decoderType
     };
 
     console.log(dataRequest)
